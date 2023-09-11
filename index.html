@@ -5,10 +5,10 @@
 
 
 	<style type="text/css">
-*{
-      font-size: 15px;
-}
 
+*{
+      font-size: 10px;
+}
 		body
 {
 	text-align: center;
@@ -334,7 +334,12 @@ h5{
          <img width="100%" src="https://1.bp.blogspot.com/-Mgj9-rbs65E/XfMoPSD5gtI/AAAAAAAAURk/NBokE2gSS2cTSJ2em5lZ5hJDuTtRN7UVwCLcBGAsYHQ/s1600/2713997.png">
          <br>
          <br>
-      <center>  <button class='glowing-btn'><span class='glowing-txt'>C<span class='faulty-letter'>L</span>ICK</span></button></center>
+      <center>  <button class='glowing-btn'><span class='glowing-txt'>C<span class='faulty-letter'>L</span>ICK</span></button>
+      
+      <br>
+      <audio controls autoplay
+  <source src="audio.mp3" type="audio/mp3">
+</audio></center>
        </div>
   </div>
    
@@ -347,10 +352,44 @@ I also wish your mother all the best
 I can't thank you enough for coming into our lives! You are an important part of our lives! We hope we stay together like this forever!<br>
 Once again many congratulations, may you progress in life and give us an opportunity to be proud along with your family!</p>
     <p>By Satyam Raj Mehra (Anant)</p>
+    
+    
+    <audio id="backgroundMusic" autoplay loop>
+  <source src="audio.mp3" type="audio/mp3">
+  <!-- Include additional source elements for different audio formats if needed -->
+</audio>
+
+    
+    
   </div>
 </div>
 
  </div>
+ 
+ 
+
+        
+    <script>
+                  const audio = document.getElementById("backgroundMusic");
+
+function playMusic() {
+  audio.play();
+}
+
+function pauseMusic() {
+  audio.pause();
+}
+
+function muteMusic() {
+  audio.muted = !audio.muted;
+}
+
+function setVolume(volumeLevel) {
+  audio.volume = volumeLevel; // volumeLevel should be between 0 (muted) and 1 (full volume)
+}
+
+
+    </script>
 </body>
 </body>
 </html>
